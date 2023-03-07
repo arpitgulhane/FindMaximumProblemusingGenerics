@@ -11,6 +11,7 @@ public class MaximumUsingGenerics {
 //        maximum(num);
         maximum(1,2,3);
         maximum((int) 1.9, (int) 2.8, (int) 3.7);
+        maximun("Arpit", "arpit2", "arpit3");
 
     }
 
@@ -55,6 +56,17 @@ public  static Double maximun(Double a,Double b,Double c){
     System.out.println(Max);
     return Max;
 }
+    public  static String maximun(String a,String b,String c){
+        String Max=a;
+        if(b.compareTo(Max)>0){
+            Max=b;
+        }
+        if (c.compareTo(b)>0){
+            Max=c;
+        }
+        System.out.println(Max);
+        return Max;
+    }
 
 
 }
