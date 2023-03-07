@@ -10,6 +10,7 @@ public class MaximumUsingGenerics {
         Character char_[]={'a','b','c'};
 //        maximum(num);
         maximum(1,2,3);
+        maximum((int) 1.9, (int) 2.8, (int) 3.7);
 
     }
 
@@ -41,6 +42,18 @@ public static Integer maximum(Integer a,Integer b,Integer c){
     }
     System.out.println(max);
     return max;
+}
+
+public  static Double maximun(Double a,Double b,Double c){
+    Double Max=a;
+        if(b.compareTo(Max)>0){
+            Max=b;
+        }
+        if (c.compareTo(b)>0){
+            Max=c;
+        }
+    System.out.println(Max);
+    return Max;
 }
 
 
